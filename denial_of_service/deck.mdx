@@ -14,6 +14,99 @@ export { default as theme } from './theme'
 
 ---
 
-## What is DoS ?
+DoS is an attack to make a machine or network resource unavailable by temporarily or indefinitely disrupting services of a host connected to the Internet.
 
 ---
+
+DoS is accomplished by flooding the targeted machine with superfluous requests, in order to overload systems.
+
+---
+
+In recent years, servers have been able to handle many requests with high availability.
+DDoS is a Distributed Denial Of Service. The goal is to infect many zombie machines and launch a denial of service attack on these machines.
+
+---
+
+A DoS attack can be limited by identifying the IP address and blocking requests at the firewall.
+In the case of a DDoS attack, it is more difficult to identify these IPs due to many machines.
+
+---
+
+Some tools has been developped to do this, like :
+
+- Trinoo <sub><sup>(UDP flooding)</sup></sub>
+- Tribe Flood Network <sub><sup>(UDP/TCP/TCP SYN flooding, Smurf)</sup></sub>
+- Schaft <sub><sup>(UDP/TCP/ICMP flooding)</sup></sub>
+- LOIC <sub><sup>(TCP/UDP/HTTP)</sup></sub>
+- HOIC <sub><sup>(TCP/UDP/HTTP)</sup></sub>
+- WebLoic <sub><sup>(LOIC pour Android)</sup></sub>
+
+---
+
+## Some famous DoS attacks
+
+---
+
+**Yahoo!**<br />
+7 February 2000<br />
+by Michael Calce
+
+
+Lose $500K in 3h
+
+---
+
+**Amazon**<br />
+8 February 2000<br />
+by Michael Calce
+
+
+Lose $600K in 10h
+
+---
+
+**Buy.com** (aka Rakuten)<br />
+8 February 2000<br />
+by Michael Calce
+
+---
+
+**CNN**<br />
+8 February 2000<br />
+by Michael Calce
+
+5% of availability
+
+---
+
+**eBay.com**<br />
+8 February 2000<br />
+by Michael Calce
+
+9.4% of availability
+
+---
+
+**October 21, 2002**
+
+The full DNS root was attacked for one hour.<br />
+7 of 13 (A to M) servers saw their performance degraded due to a flow of around 150K requests per second to each of the servers.
+
+But that did not cause a big pertubartion.
+
+---
+
+**February 7, 2007**
+
+Another DNS root was attacked for 24h.
+
+4 (F, G, L and M) servers out of 13 were targeted. F and M were seriously affected while G and L reported an unusual charge.
+Anycast enable to limited the DoS attack, introduced following the first attack.
+
+---
+
+**November 30, 2015** and **December 1st, 2015**
+
+The 13 root servers were the subject of 2 DDoS attacks, causing delays on the root servers B, C, G and H.
+About 5 million queries were sent per second.
+3 of the 13 root servers experienced slowdowns, but the impact was limited.
