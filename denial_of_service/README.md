@@ -1,38 +1,8 @@
+# Denial Of Service (DoS)
 
-# mdx-deck basic template
+Lightning talk about DoS attack.
+There is information on what it is, the different attacks and the best known in history.
 
-This was generated with [mdx-deck][]'s `npm init deck` command.
+Also there is a little script using `ddos-stress` package, to simulate a DoS attack.
 
-## Development
-
-To run the presentation deck in development mode:
-
-```sh
-npm start
-```
-
-Edit the [`deck.mdx`](deck.mdx) file to get started.
-
-## Exporting
-
-To build the presentation deck as static HTML:
-
-```sh
-npm run build
-```
-
-To export a PDF:
-
-```sh
-npm run pdf
-```
-
-To export an image of the title slide:
-
-```sh
-npm run image
-```
-
-For more documentation see the [mdx-deck][] repo.
-
-[mdx-deck]: https://github.com/jxnblk/mdx-deck
+You can found the presentation [here](https://denialofservice-j4hruh8zs.now.sh)
