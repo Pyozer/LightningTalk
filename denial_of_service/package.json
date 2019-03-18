@@ -1,4 +1,6 @@
 {
+  "name": "denial_of_service",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "mdx-deck deck.mdx",
@@ -7,9 +9,10 @@
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck"
   },
+  "dependencies": {
+    "ddos-stress": "^0.1.0"
+  },
   "devDependencies": {
     "mdx-deck": "^1.6.7"
-  },
-  "name": "denial_of_service",
-  "version": "1.0.0"
+  }
 }
