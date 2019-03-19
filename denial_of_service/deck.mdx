@@ -34,24 +34,7 @@ In case of a DDoS attack is more difficult to identify these IPs due to many mac
 
 ---
 
-Some tools has been developped to do this, like :
-
-- Trinoo <sub><sup>(UDP flooding)</sup></sub>
-- Tribe Flood Network <sub><sup>(UDP/TCP/TCP SYN flooding, Smurf)</sup></sub>
-- Schaft <sub><sup>(UDP/TCP/ICMP flooding)</sup></sub>
-- LOIC <sub><sup>(TCP/UDP/HTTP)</sup></sub>
-- HOIC <sub><sup>(TCP/UDP/HTTP)</sup></sub>
-- WebLoic <sub><sup>(LOIC for Android)</sup></sub>
-
----
-
 ## Type of attack
-
----
-
-### Exploitation of faults or machine limitations
-
-Send an ICMP packet of more than 65,535 bytes, which resulted in UDP fragmentation errors, or TCP packets containing illegal/incompatible flags.
 
 ---
 
@@ -78,21 +61,23 @@ Result in a saturation of the bandwidth leaving very little TCP traffic.
 
 ---
 
-### Packet Fragment
-
-Use weaknesses of some TCP / IP stacks in IP defragmentation.<br />
-The second fragment is contained in the first (overlapping).
-
-Some systems do not handle this exception, result in a crash.
-
----
-
 ### Smurfing
 
 When a broadcast ping (ICMP protocol) is sent, it's to each machine of the network.
 The source IP is changed by the IP of the target and a continuous stream of ping is sent. All machines responds to the target.
 
 The huge traffic generated causes network saturation.
+
+---
+
+Some tools has been developped to do this, like :
+
+- Trinoo <sub><sup>(UDP flooding)</sup></sub>
+- Tribe Flood Network <sub><sup>(UDP/TCP/TCP SYN flooding, Smurf)</sup></sub>
+- Schaft <sub><sup>(UDP/TCP/ICMP flooding)</sup></sub>
+- LOIC <sub><sup>(TCP/UDP/HTTP)</sup></sub>
+- HOIC <sub><sup>(TCP/UDP/HTTP)</sup></sub>
+- WebLoic <sub><sup>(LOIC for Android)</sup></sub>
 
 ---
 
@@ -119,22 +104,6 @@ Lose $600K in 10h
 
 ---
 
-## Buy.com <small>(Rakuten)</small>
-
-8 February 2000<br />
-by Michael Calce
-
----
-
-## CNN
-
-8 February 2000<br />
-by Michael Calce
-
-5% of availability
-
----
-
 ## eBay.com
 
 8 February 2000<br />
@@ -144,29 +113,11 @@ by Michael Calce
 
 ---
 
-## October 21, 2002
+## Sources
 
-The full DNS root was attacked for one hour.<br />
-7 of 13 (A to M) servers saw their performance degraded due to a flow of around 150K requests per second to each of the servers.
-
-But that did not cause a big pertubartion.
-
----
-
-## February 7, 2007
-
-Another DNS root was attacked for 24h.
-
-4 (F, G, L and M) servers out of 13 were targeted. F and M were seriously affected while G and L reported an unusual charge.
-Anycast enable to limited the DoS attack, introduced following the first attack.
-
----
-
-## November 30, 2015,<br />December 1st, 2015
-
-The 13 root servers were the subject of 2 DDoS attacks, causing delays on the root servers B, C, G and H.
-About 5 million queries were sent per second.
-3 of the 13 root servers experienced slowdowns, but the impact was limited.
+- https://fr.wikipedia.org/wiki/Attaque_par_d%C3%A9ni_de_service
+- https://www.paloaltonetworks.com/cyberpedia/what-is-a-denial-of-service-attack-dos
+- https://www.cloudflare.com/learning/ddos/glossary/denial-of-service/
 
 ---
 
